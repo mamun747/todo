@@ -105,7 +105,8 @@ function MainArea() {
   return (
     <>
       <section className="pt-10 px-5">
-        <div className="max-w-md">
+        <div className="max-w-md relative">
+          <div className="absolute -right-32 top-20 text-lg">Total Tasks: <span className="font-semibold">{filteredTasks.length}</span></div>
           <div className="flex gap-5 md:flex-row flex-col">
             <input
               type="text"
